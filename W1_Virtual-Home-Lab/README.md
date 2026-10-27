@@ -96,10 +96,9 @@ It can be used for activities such as:
 
 > 💡 Additional target machines can be added to the same virtual network in future projects.
 
-📷 **Architecture diagram / network topology screenshot:**
+📷 **Lab architecture screenshot:**
 
-<!-- Replace the file name below with your own screenshot inside the pictures folder -->
-![Lab Architecture](pictures/lab-architecture.png)
+![Lab Architecture](pictures/Lab%20Architecture.png)
 
 ---
 
@@ -112,22 +111,21 @@ It can be used for activities such as:
 | 🐧 **Ubuntu Server (mini)** | Target / server | 2.3 GB | 2 | 18 GB | `192.168.58.175` |
 | 🖥️ **Ubuntu Desktop** | Target / workstation | 4 GB | 2 | 60 GB | `192.168.58.173` |
 
-**Total allocated:** ~11.6 GB RAM 🧠 and 11 virtual processors ⚡ (shared with the host system).
+**Total allocated:** ~11.6 GB RAM 🧠 and 10 virtual processors ⚡ (shared with the host system).
 
 ### 📸 Machine Specification Screenshots
 
 #### 🐉 Kali Linux
-<!-- Replace file names with your screenshots -->
 ![Kali Specs](pictures/kali-specs.png)
 
 #### 🪟 Windows 10
-![Windows 10 Specs](pictures/windows10-specs.png)
+![Windows 10 Specs](pictures/Windows%2010%20Specs.png)
 
 #### 🐧 Ubuntu Server
-![Ubuntu Server Specs](pictures/ubuntu-server-specs.png)
+![Ubuntu Server Specs](pictures/Ubuntu%20Server%20Specs.png)
 
 #### 🖥️ Ubuntu Desktop
-![Ubuntu Desktop Specs](pictures/ubuntu-desktop-specs.png)
+![Ubuntu Desktop Specs](pictures/Ubuntu%20Desktop%20Specs.png)
 
 ---
 
@@ -158,19 +156,19 @@ Multiple virtual machines connected to the same NAT network can **communicate wi
 ### 📸 Network Interface Screenshots
 
 #### 🐉 Kali Linux – IP configuration (`ip a`)
-![Kali IP](pictures/kali-ip.png)
+![Kali IP](pictures/Kali%20IP.png)
 
 #### 🪟 Windows 10 – IP configuration (`ipconfig`)
-![Windows IP](pictures/windows10-ip.png)
+![Windows IP](pictures/Windows%20IP.png)
 
 #### 🐧 Ubuntu Server – IP configuration (`ip a`)
-![Ubuntu Server IP](pictures/ubuntu-server-ip.png)
+![Ubuntu Server IP](pictures/Ubuntu%20Server%20IP.png)
 
 #### 🖥️ Ubuntu Desktop – IP configuration (`ip a`)
-![Ubuntu Desktop IP](pictures/ubuntu-desktop-ip.png)
+![Ubuntu Desktop IP](pictures/Ubuntu%20Desktop%20IP.png)
 
 #### 🔧 VMware Virtual Network Editor (NAT settings)
-![VMware Network Editor](pictures/vmware-network-editor.png)
+![VMware Network Editor](pictures/VMware%20Network%20Editor.png)
 
 ---
 
@@ -180,7 +178,8 @@ Multiple virtual machines connected to the same NAT network can **communicate wi
 Download and install VMware Workstation Pro on the host machine, then confirm that virtualization is enabled in BIOS/UEFI.
 
 📷 *Screenshot:*
-![VMware Installed](pictures/step1-vmware-installed.png)
+
+![VMware Installed](pictures/VMware%20Installed.png)
 
 ### 2️⃣ Create the Virtual Machines
 Create/import each VM and allocate resources according to the specification table above.
@@ -190,13 +189,12 @@ Create/import each VM and allocate resources according to the specification tabl
 - 🐧 Install **Ubuntu Server**
 - 🖥️ Install **Ubuntu Desktop**
 
-
-
 ### 3️⃣ Configure the NAT Network
 Open **Edit → Virtual Network Editor**, select the NAT network and set the subnet to `192.168.58.0/24` with DHCP enabled. Set every VM's network adapter to **NAT**.
 
 📷 *Screenshot:*
-![NAT Config](pictures/step3-nat-config.png)
+
+![NAT Config](pictures/NAT%20Config.png)
 
 ### 4️⃣ Assign IP Addresses
 Configure and assign an IP address to every machine (see the IP Address Plan above).
@@ -210,7 +208,6 @@ ip a
 ```cmd
 ipconfig
 ```
-
 
 ### 5️⃣ Install VMware Tools / Guest Additions
 Install VMware Tools (or `open-vm-tools` on Linux) for better screen resolution, clipboard sharing and performance.
@@ -239,7 +236,8 @@ ping -c 4 192.168.58.175   # Ubuntu Server
 ```
 
 📷 *Screenshot:*
-![Ping Test](pictures/test-ping.png)
+
+![Ping Test](pictures/Ping%20Test.png)
 
 ### 🌐 Test 2 – Internet access & DNS resolution
 ```bash
@@ -248,7 +246,8 @@ ping -c 4 google.com       # DNS resolution
 ```
 
 📷 *Screenshot:*
-![DNS Test](pictures/test-dns.png)
+
+![DNS Test](pictures/DNS%20Test.png)
 
 ### 🔎 Test 3 – Basic host discovery (authorized lab only)
 ```bash
@@ -256,7 +255,8 @@ nmap -sn 192.168.58.0/24
 ```
 
 📷 *Screenshot:*
-![Nmap Discovery](pictures/test-nmap.png)
+
+![Nmap Discovery](pictures/Nmap%20Discovery.png)
 
 | ✅ Test | 🎯 Expected Result | 📋 Status |
 |---|---|---|
@@ -283,8 +283,11 @@ A **clean snapshot** of each VM was taken right after setup so the lab can be re
 | 🐧 Ubuntu Server | `Clean-Install` | Fresh install, network configured |
 | 🖥️ Ubuntu Desktop | `Clean-Install` | Fresh install, network configured |
 
-📷 *Screenshot:*
-![Snapshot](pictures/snapshot.png)
+📷 *Screenshots:*
+
+![Snapshot](pictures/Snapshot.png)
+
+![Kali Snapshot](pictures/kali_snapshot.png)
 
 ---
 
@@ -338,7 +341,7 @@ This lab is for **educational and authorized testing purposes only**. 🎓
 ## 👤 Author
 
 **Your Name** ✍️
-🔗 GitHub: [your-username](https://github.com/your-username)
+🔗 GitHub: [code8-web](https://github.com/code8-web)
 💼 LinkedIn: [your-profile](https://linkedin.com/in/your-profile)
 
 ⭐ *If you found this project helpful, give it a star!*
